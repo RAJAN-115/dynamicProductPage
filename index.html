@@ -24,8 +24,23 @@
       else console.log(`not in stock`);
 
       let messyPrice = '249.99 USD';
-      let pasredInt= parseInt(messyPrice)
-      let pasredFloat= parseFloat(messyPrice)
+      let pasredInt = parseInt(messyPrice);
+      let pasredFloat = parseFloat(messyPrice);
+
+      let product = {
+        name: 'Interactive Learning Drone',
+        price: 249.99,
+        isInStock: true,
+        description: 'A smart drone that teaches you to code by flying missions.',
+        imageUrl: null,
+
+        displaySummary : function(){
+          console.log(`Product: ${this.name} - Price : $${this.price}`)
+        }
+      };
+
+      console.log(product.name)
+      console.log(product.displaySummary())
 
     </script>
   </body>
